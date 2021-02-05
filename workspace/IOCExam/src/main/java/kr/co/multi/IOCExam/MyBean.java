@@ -6,11 +6,16 @@ public class MyBean {
 	
 	private MyDAO myDao;
 	
-	public void setMyDao(MyDAO myDao) {
+	public MyBean(MyDAO myDao) {
 		this.myDao = myDao;
 	}
 	
+//	public void setMyDao(MyDAO myDao) {
+//		this.myDao = myDao;
+//	}
+	
 	public void checkDao() {
+		System.out.println("MyBean의 checkDAO 메소드 입니다.");
 		myDao.print();
 	}
 
