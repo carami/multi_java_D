@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"    
     xsi:schemaLocation="http://www.springframework.org/schema/beans
-        https://www.springframework.org/schema/beans/spring-beans.xsd">
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        https://www.springframework.org/schema/context/spring-context.xsd">
         
-        <bean id="myBean" class="kr.co.multi.IOCExam.MyBean">
-        	<!-- <property name="myDao" ref="myDao"></property>   --> 
+        <context:component-scan base-package="kr.co.multi"/>
+       <!--  <bean id="myBean" class="kr.co.multi.IOCExam.MyBean">
+        	<property name="myDao" ref="myDao"></property>   
         	<property name="name" value="kang kyungmi"></property> 
         	<constructor-arg>
         		<ref bean="myDao"/>
         	</constructor-arg>   	
         </bean>
-        <bean id="myDao" class="kr.co.multi.IOCExam.MyDAO"></bean>
+        <bean id="myDao" class="kr.co.multi.IOCExam.MyDAO"></bean> -->
         
 </beans>
