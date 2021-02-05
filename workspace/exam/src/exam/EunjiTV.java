@@ -19,9 +19,9 @@ public class EunjiTV implements TV{
 		// TODO Auto-generated method stub
 		if (tv) {
 			tv = true;
-			System.out.println("TV°¡ ÄÑÁ³½À´Ï´Ù.");
+			System.out.println("TVê°€ ì¼œì¡ŒìŠµë‹ˆë‹¤.");
 		} else {
-			System.out.println("TV°¡ ÀÌ¹Ì ÄÑÁ®ÀÖ½À´Ï´Ù.");
+			System.out.println("TVê°€ ì´ë¯¸ ì¼œì ¸ìˆìŠµë‹ˆë‹¤.");
 		}
 	}
 
@@ -30,9 +30,9 @@ public class EunjiTV implements TV{
 		// TODO Auto-generated method stub
 		if (tv) {
 			tv = false;
-			System.out.println("TV°¡ ²¨Á³½À´Ï´Ù.");
+			System.out.println("TVê°€ êº¼ì¡ŒìŠµë‹ˆë‹¤.");
 		} else {
-			System.out.println("TV°¡ ÀÌ¹Ì ²¨Á®ÀÖ½À´Ï´Ù.");
+			System.out.println("TVê°€ ì´ë¯¸ êº¼ì ¸ìˆìŠµë‹ˆë‹¤.");
 		}
 	}
 
@@ -40,16 +40,16 @@ public class EunjiTV implements TV{
 	public void volumeDown() {
 		// TODO Auto-generated method stub
 		if (vol < 1) {
-			System.out.println("º¼·ıÀ» ´õÀÌ»ó ³·Ãâ ¼ö ¾ø½À´Ï´Ù.");
+			System.out.println("ë³¼ë¥¨ì„ ë”ì´ìƒ ë‚®ì¶œ ìˆ˜ ì—†ìŠµë‹ˆë‹¤.");
 		} else {
-			System.out.println("º¼·ıÀÌ -1µÇ¾î " + --vol + "°¡ µÇ¾ú½À´Ï´Ù.");
+			System.out.println("ë³¼ë¥¨ì´ -1ë˜ì–´ " + --vol + "ê°€ ë˜ì—ˆìŠµë‹ˆë‹¤.");
 		}
 	}
 
 	@Override
 	public void volumeUp() {
 		// TODO Auto-generated method stub
-		System.out.println("º¼·ıÀÌ +1µÇ¾î " + ++vol + "°¡ µÇ¾ú½À´Ï´Ù.");
+		System.out.println("ë³¼ë¥¨ì´ +1ë˜ì–´ " + ++vol + "ê°€ ë˜ì—ˆìŠµë‹ˆë‹¤.");
 	}
 
 }
