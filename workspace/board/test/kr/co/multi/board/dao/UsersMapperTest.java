@@ -1,4 +1,4 @@
-package kr.co.multi.IOCExam.dao;
+package kr.co.multi.board.dao;
 
 import static org.junit.Assert.*;
 
@@ -8,8 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import kr.co.multi.IOCExam.config.ApplicationConfig;
-import kr.co.multi.IOCExam.dto.User;
+import kr.co.multi.board.config.ApplicationConfig;
+import kr.co.multi.board.dto.User;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = ApplicationConfig.class)
@@ -30,7 +30,7 @@ public class UsersMapperTest {
 	@Test
 	public void addUser() throws Exception{
 		User user = new User();
-		user.setId("test3");
+		user.setId("test4");
 		user.setName("테스트");
 		user.setPassword("1234");
 		user.setEmail("test@test.com");

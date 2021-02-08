@@ -1,4 +1,4 @@
-package kr.co.multi.IOCExam.config;
+package kr.co.multi.board.config;
 
 import javax.sql.DataSource;
 
@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Import;
 import org.springframework.jdbc.datasource.SimpleDriverDataSource;
 
 @Configuration
-@ComponentScan(basePackages = {"kr.co.multi.IOCExam.dao"})
+@ComponentScan(basePackages = {"kr.co.multi.board.dao"})
 @Import({MyBatisConfig.class})
 public class ApplicationConfig {
 	//DataSource 설정
