@@ -12,4 +12,7 @@
 	<insert id="addUser" parameterType="kr.co.multi.board.dto.User">
 		insert into users values(#{id},#{name},#{password},#{email},sysdate)
 	</insert>
+	<select id="getUsers" resultMap="user_resultMap">
+		select id, name, password, email, join_date from users
+	</select>
 </mapper>

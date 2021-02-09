@@ -1,5 +1,7 @@
 package kr.co.multi.board.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,6 +17,15 @@ public class UserService {
 	public int joinUser(User user) {
 		//회원가입을 하기위한 비지니스 로직이 있다면 처리!! 
 		
-		return userMapper.addUser(user);
+		try {
+			return userMapper.addUser(user);
+		} catch (Exception e) {
+			e.printStackTrace();
+			return 0;
+		}
+	}
+	
+	public List<User> getUsers(){
+		return userMapper.getUsers();
 	}
 }

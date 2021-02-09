@@ -2,6 +2,8 @@ package kr.co.multi.board.dao;
 
 import static org.junit.Assert.*;
 
+import java.util.List;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -39,5 +41,11 @@ public class UsersMapperTest {
 		
 		assertEquals(1, resultCount);
 		assertNotNull(usersMapper.getUser(user.getId()));
+	}
+	
+	@Test
+	public void getUsers() throws Exception{
+		List<User> users = usersMapper.getUsers();
+		assertEquals(6, users.size());
 	}
 }
