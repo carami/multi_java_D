@@ -9,12 +9,14 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.springframework.transaction.annotation.Transactional;
 
 import kr.co.multi.board.config.ApplicationConfig;
 import kr.co.multi.board.dto.User;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = ApplicationConfig.class)
+@Transactional
 public class UsersMapperTest {
 	@Autowired
 	private UsersMapper usersMapper;
@@ -32,7 +34,7 @@ public class UsersMapperTest {
 	@Test
 	public void addUser() throws Exception{
 		User user = new User();
-		user.setId("test4");
+		user.setId("test6");
 		user.setName("테스트");
 		user.setPassword("1234");
 		user.setEmail("test@test.com");
