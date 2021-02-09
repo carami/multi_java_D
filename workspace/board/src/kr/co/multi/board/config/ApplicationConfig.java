@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Import;
 import org.springframework.jdbc.datasource.SimpleDriverDataSource;
 
 @Configuration
-@ComponentScan(basePackages = {"kr.co.multi.board.dao"})
+@ComponentScan(basePackages = {"kr.co.multi.board.dao","kr.co.multi.board.service"})
 @Import({MyBatisConfig.class})
 public class ApplicationConfig {
 	//DataSource 설정
