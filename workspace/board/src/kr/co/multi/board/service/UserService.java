@@ -14,7 +14,9 @@ import kr.co.multi.board.dto.User;
 public class UserService {
 	@Autowired
 	private UsersMapper userMapper;
-	
+	public User getUser(String id) {
+		return userMapper.getUser(id);
+	}
 	@Transactional(readOnly = false)
 	public int joinUser(User user) throws RuntimeException{
 		//회원가입을 하기위한 비지니스 로직이 있다면 처리!! 

@@ -8,6 +8,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import kr.co.multi.board.dto.User;
 import kr.co.multi.board.service.UserService;
@@ -36,4 +37,5 @@ public class UserController {
 		model.addAttribute("userList", users);
 		return "user/list2";
 	}
+	
 }
